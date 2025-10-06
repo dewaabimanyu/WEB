@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Kimia</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>⚗️ Kalkulator Kimia</h1>
+    <p>Masukkan rumus senyawa (contoh: H2O, CO2, C6H12O6)</p>
+
+    <input type="text" id="formula" placeholder="Masukkan rumus..." autofocus>
+    <button id="calculateBtn">Hitung</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
